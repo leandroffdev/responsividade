@@ -1,0 +1,84 @@
+html {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+body {
+    margin: 0;
+}
+button {
+    background-color: #F84646;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+#presentation-container {
+    padding: 2.5rem 7.5rem;
+    height: 50vh;
+}
+.presentation {
+    width: 37.5rem;
+    position: relative;
+    top: calc(50% - 9rem);
+}
+.container {
+    padding: 10rem 7.5rem;
+    text-align: center;
+}
+.contact-title {
+    margin-top: 0.5rem;
+}
+.container > p {
+    margin-top: 1.5rem;
+}
+.container > button {
+    margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;
+}
+.container > button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.background-gradient {
+    /*background: linear-gradient(180deg, #ffffff, red);*/
+}
+.cubo {
+    /*transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;*/
+
+    transition: opacity 0.5s ease-in;
+    width: 100px;
+    height: 100px;
+    background-color: #F84646;
+    position: absolute;
+    animation: animacao 2s ease-in infinite;
+}
+.cubo:hover {
+    opacity: .5;
+}
+@keyframes animacao {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
