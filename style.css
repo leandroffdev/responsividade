@@ -31,14 +31,21 @@ h2 {
 #presentation-container {
     padding: 2.5rem 7.5rem;
     height: 50vh;
+    background-image: url("./assets/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .presentation {
     width: 37.5rem;
-    position: relative;
-    top: calc(50% - 9rem);
+    /*position: relative;
+    top: calc(50% - 9rem);*/
 }
 .container {
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
     text-align: center;
 }
 .contact-title {
@@ -54,10 +61,10 @@ h2 {
 .container > button:hover {
     opacity: 0.8;
     transform: scale(1.1);
-}
+} /*
 .background-gradient {
-    /*background: linear-gradient(180deg, #ffffff, red);*/
-}
+   background: linear-gradient(180deg, #ffffff, red);
+}*/
 .cubo {
     /*transition-property: all;
     transition-duration: 1s;
@@ -81,4 +88,17 @@ h2 {
     100% {
         left: 100%;
     }
+}
+.background-red {
+    background-color: #F84646;
+    color: #ffffff;
+}
+#qualities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#qualities > img {
+    margin: 0 2.5rem;
 }
